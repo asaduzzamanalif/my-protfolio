@@ -1,0 +1,250 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    transition: .5s;
+}
+
+#resume {
+    border: none;
+    background: transparent;
+    border: 2px dotted #3498db00;
+    font-size: 22px;
+    color: #3498db;
+    transition: .5s;
+}
+#resume:hover {
+    border: 2px dashed #3498db;
+}
+
+.social {
+    font-size: 48px;
+}
+
+.socialIcon {
+    text-decoration: none;
+    transition: .5s;
+}
+.socialIcon:hover {
+    transform: scale(1.1);
+}
+
+.social:nth-of-type(1) .socialIcon {
+    color: #000;
+}
+.social:nth-of-type(2) .socialIcon {
+    color: #1c9cea;
+}
+.social:nth-of-type(3) .socialIcon {
+    color: #0a63bc;
+}
+.social:nth-of-type(4) .socialIcon {
+    color: #3d4d94;
+}
+.social:nth-of-type(5) .socialIcon {
+    color: #d31e84;
+}
+
+img {
+    width: 90%;
+}
+
+/* All Project File */
+
+.card {
+    cursor: pointer;
+    min-height: 20vh;
+    transition: .5s;
+}
+
+.card .card-body {
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.card-title {
+    background: rgba(0, 0, 0, 0.527);
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+	top: 100%;
+    left: 0;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.js,.html,.css{
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.js {
+    background: #e74c3c;
+}
+
+.html {
+    background: #3498db;
+}
+
+.css {
+    background: #f39c12;
+}
+
+.view {
+    color: crimson;
+    padding: 0 5px 0 0;
+}
+.code {
+    color: #f1c40f;
+    padding: 0 5px 0 0;
+}
+.card-title p {
+    margin: 0;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    color: #fff;
+}
+
+.card:hover .card-title {
+    top: 0%;
+}
+
+.vanillaJs:nth-of-type(1) .card {
+    background: url(../images/projects/blood.jpg) no-repeat center center / 100% 100%;
+}
+.vanillaJs:nth-of-type(2) .card {
+    background: url(../images/projects/gradient.jpg) no-repeat center center / 100% 100%;
+}
+.vanillaJs:nth-of-type(3) .card {
+    background: url(../images/projects/calc.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(4) .card {
+    background: url(../images/projects/shoppingCard.jpg) no-repeat center center / 100% 100%;
+}
+.vanillaJs:nth-of-type(5) .card {
+    background: url(../images/projects/bank.jpg) no-repeat center center / 100% 100%;
+}
+.vanillaJs:nth-of-type(6) .card {
+    background: url(../images/projects/pin.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(7) .card {
+    background: url(../images/projects/lyric.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(8) .card {
+    background: url(../images/projects/weather.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(9) .card {
+    background: url(../images/projects/numberConvertor.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(10) .card {
+    background: url(../images/projects/crudProject.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(11) .card {
+    background: url(../images/projects/clock.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(12) .card {
+    background: url(../images/projects/emailValid.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(13) .card {
+    background: url(../images/projects/increment.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(14) .card {
+    background: url(../images/projects/multiTable.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(15) .card {
+    background: url(../images/projects/oddEven.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(16) .card {
+    background: url(../images/projects/todoApp.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(17) .card {
+    background: url(../images/projects/randomColor.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(18) .card {
+    background: url(../images/projects/greatPoint.jpg) no-repeat center center / cover;
+}
+.vanillaJs:nth-of-type(19) .card {
+    background: url(../images/projects/typeingProject.jpg) no-repeat center center / 200% ;
+}
+.vanillaJs:nth-of-type(20) .card {
+    background: url(../images/projects/bookList.jpg) no-repeat center center / cover ;
+}
+
+.loading {
+    padding: 50px 0;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    color: chocolate;
+    font-size: 48px;
+    animation: animate 1.1s ease-in-out infinite;
+    animation-delay: calc(.1s * var(--c));
+}
+
+@keyframes animate {
+    0%,100% {
+        transform: translateY(0px);
+        filter: hue-rotate(0deg);
+    }
+    20%{
+        transform: translateY(-20px);
+        filter: hue-rotate(180deg);
+    }
+    40% {
+        transform: translateY(0px);
+        filter: hue-rotate(-180deg);
+    }
+}
+
+.dayMode,.nightMode {
+    cursor: pointer;
+}
+
+.markupJS {
+    color: #f1c40f;
+}
+.markup:nth-of-type(1) {
+    color: #e74c3c;
+}
+.markup:nth-of-type(2) {
+    color: #8e44ad;
+}
+.markup:nth-of-type(3) {
+    color: #3498db;
+}
+.markup:nth-of-type(3) {
+    color: #3498db;
+}
+
+strong+span {
+    color: #95a5a6;
+}
+
+.projects {
+    position: relative;
+}
+
+.projects::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    top: 110%;
+    left: 44%;
+    border-top: 3px solid #e67e22;
+    transition: .5s;
+}
+
+.projects:hover::after {
+    width: 12%;
+}
