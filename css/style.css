@@ -117,6 +117,20 @@ img {
     top: 0%;
 }
 
+
+/*------------------------------------------
+            CSS PROJECT 
+------------------------------------------*/
+
+.cssProject:nth-of-type(1) .card{
+    background: url(../images/projects/css-norman-meals.jpg) no-repeat center center / cover;
+}
+
+
+/*------------------------------------------
+            JS PROJECT
+------------------------------------------*/
+
 .vanillaJs:nth-of-type(1) .card {
     background: url(../images/projects/blood.jpg) no-repeat center center / 100% 100%;
 }
