@@ -125,6 +125,12 @@ img {
 .cssProject:nth-of-type(1) .card{
     background: url(../images/projects/css-norman-meals.jpg) no-repeat center center / cover;
 }
+.cssProject:nth-of-type(2) .card{
+    background: url(../images/projects/lgran.jpg) no-repeat center center / cover;
+}
+.cssProject:nth-of-type(3) .card{
+    background: url(../images/projects/meteorNewspaper.jpg) no-repeat center center / cover;
+}
 
 
 /*------------------------------------------
